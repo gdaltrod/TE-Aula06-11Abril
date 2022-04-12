@@ -16,4 +16,12 @@ public class CarrinhoDeCompras {
         produtos.remove(produtoASerRemovido);
     }
 
+    public double CalcularValorTotalASerPago(){
+        double total = 0;
+        for (Produto produto: produtos) {
+            double valor = produto.GetValor();
+            total = total + valor;
+        }
+        return  total;
+    }
 }
