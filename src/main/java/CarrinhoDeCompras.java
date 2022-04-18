@@ -20,7 +20,7 @@ public class CarrinhoDeCompras {
         double total = 0;
         for (Produto produto: produtos) {
             double valor = produto.GetValor();
-            total = total + valor;
+            total += valor;
         }
         return  total;
     }
